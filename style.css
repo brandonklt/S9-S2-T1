@@ -1,38 +1,57 @@
-/* Configuración del fondo morado */
+/* Fondo morado para toda la página */
 body {
-    background-color: #4B0082; /* Morado Indigo */
-    color: white; /* Texto blanco para que resalte */
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    background-color: #4B0082;
+    color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para la imagen en la esquina */
+.logo-esquina {
+    position: absolute ;
+    top: 500px;
+    right: 800px;
+    opacity: 0.8;
 }
 
 .container {
     text-align: center;
-    max-width: 800px;
+    padding: 60px 20px;
 }
 
-h2 {
-    font-size: 3rem;
-    color: #E0B0FF; /* Morado claro para el título */
+/* Estilos para el footer */
+.footer-diferenciado {
+    background-color: #310055; /* Un morado más oscuro */
+    padding: 40px 0;
+    margin-top: 50px;
+    text-align: center;
 }
 
-/* Estilo para que el video se vea bien en celulares */
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin-top: 20px;
-    border: 5px solid #E0B0FF;
-    border-radius: 10px;
+.redes-iconos .enlace-icono {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+.redes-iconos .enlace-icono:hover {
+    color: #E0B0FF; /* Efecto al pasar el mouse */
+}
+
+.linea-separadora {
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    width: 60%;
+    margin: 20px auto;
+}
+
+.imagen-seccion {
+    margin-top: 30px; /* Separa la imagen del video */
+    text-align: center;
+}
+
+.logo-centrado {
+    border-radius: 15px; /* Opcional: le da bordes redondeados a la imagen */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Opcional: le da una sombra elegante */
 }
